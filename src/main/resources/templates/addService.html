@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Service</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	   <form action="saveService" method="Post">
+        <label for="1">Service name : </label>
+        <input type="text" name="name" id="1" />
+        <br /><br/>
+        
+        <label for="2">Price : </label>
+        <input type="text" name="price" id="2" />
+        <br /><br/>
+        
+        <label for="3">Required time for Service : </label>
+        <input type="text" name="time" id="3" />
+        <br /><br/>
+        
+        <label for="4">Offer : </label>
+        <input type="text" name="offer" id="4" />
+        <br /><br/>
+        
+        <label for="5">Detail-1 : </label>
+        <input type="text" name="detail1" id="5" />
+        <br /><br/>
+        
+        <label for="6">Detail-2 : </label>
+        <input type="text" name="detail2" id="6" />
+        <br /><br/>
+        
+		<label for="7">Category of Service : </label>
+        <input type="text" name="category" id="7" />
+        <br /><br/>
+        
+        <label for="8">Appliance Section : </label>
+        <input type="text" name="section" id="8" />
+        <br /><br/>
+        
+        <input type="submit" value="Save Details" class="save-button"/>
+      </form>
+	<h2 th:text="${message}"></h2>
+	<button class="normal-button"><a th:href="displayAllServices">View All Service</a></button>
+</body>
+</html>

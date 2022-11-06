@@ -1,0 +1,63 @@
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 800px;
+}
+
+thead tr th {
+  background-color: #009879;
+  color: #fff;
+  text-align: left;
+}
+
+tbody tr td {
+  background-color: lightyellow;
+}
+
+.normal-button {
+  background-color: #ff0f47;
+  border: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.normal-button a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+
+.table-button {
+  background-color: #06d6a0;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+}
+
+.table-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.table-button-del {
+  background-color: #ff0f47;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+}
+
+.table-button-del a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.save-button {
+  background-color: #06d6a0;
+  border: none;
+  margin: 3px;
+  margin-top: 25px;
+  border-radius: 5px;
+  height: 2rem;
+}

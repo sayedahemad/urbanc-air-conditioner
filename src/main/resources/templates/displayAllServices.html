@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>View Services</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" >
+  </head>
+  <body>
+    <h2>Services</h2>
+    <table>
+      <thead class="content-table">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Time</th>
+          <th>Offer</th>
+          <th>Detail-1</th>
+          <th>Detail-2</th>
+          <th>Category</th>
+          <th>Section</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="service:${services}">
+          <td th:text="${service.id}"></td>
+          <td th:text="${service.name}"></td>
+          <td th:text="${service.price}"></td>
+          <td th:text="${service.time}"></td>
+          <td th:text="${service.offer}"></td>
+          <td th:text="${service.detail1}"></td>
+          <td th:text="${service.detail2}"></td>
+          <td th:text="${service.category}"></td>
+          <td th:text="${service.section}"></td>
+          <td><button class="table-button"><a th:href="@{'editService?id='+${service.id}}">edit</a></button></td>
+          <td><button class="table-button-del"><a th:href="@{'deleteService?id='+${service.id}}">delete</a></button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="normal-button"><a th:href="appliance">Add New Service</a></button>
+  </body>
+</html>

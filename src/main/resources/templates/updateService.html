@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Service</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	   <form action="updateService" method="Post">
+	   
+	    <label for="0">Id : </label>
+        <input type="text" name="id" th:value="${service.id}" id="0" readonly/>
+        <br /><br/>
+        
+        <label for="1">Service name : </label>
+        <input type="text" name="name" th:value="${service.name}" id="1" />
+        <br /><br/>
+        
+        <label for="2">Price : </label>
+        <input type="text" name="price" th:value="${service.price}" id="2" />
+        <br /><br/>
+        
+        <label for="3">Required time for Service : </label>
+        <input type="text" name="time" th:value="${service.time}" id="3" />
+        <br /><br/>
+        
+        <label for="4">Offer : </label>
+        <input type="text" name="offer" th:value="${service.offer}" id="4" />
+        <br /><br/>
+        
+        <label for="5">Detail-1 : </label>
+        <input type="text" name="detail1" th:value="${service.detail1}" id="5" />
+        <br /><br/>
+        
+        <label for="6">Detail-2 : </label>
+        <input type="text" name="detail2" th:value="${service.detail2}" id="6" />
+        <br /><br/>
+        
+		<label for="7">Category of Service : </label>
+        <input type="text" name="category" th:value="${service.category}" id="7" />
+        <br /><br/>
+        
+        <label for="8">Appliance Section : </label>
+        <input type="text" name="section" th:value="${service.section}" id="8" />
+        <br /><br/>
+        
+        <input type="submit" value="Save Details" class="save-button" />
+      </form>
+</body>
+</html>
